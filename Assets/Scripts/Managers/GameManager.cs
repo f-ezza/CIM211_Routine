@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
     {
         if (scene.buildIndex == 1)
         {
+            gamemodeRunning = false;
+            currentTime = 0;
             var objective = FindAnyObjectByType<EnterObjective>();
             if (objective != null)
             {
@@ -71,7 +73,7 @@ public class GameManager : MonoBehaviour
     private void CompleteGame()
     {
         gamemodeRunning = false;
-        currentTime = 0;
+        currentTime = 300;
         ChangeScene(0);
     }
 

@@ -267,8 +267,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1907002303}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 851002857}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 3
         m_Arguments:
@@ -354,6 +354,125 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 768, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &851002856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851002858}
+  - component: {fileID: 851002857}
+  - component: {fileID: 851002859}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &851002857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851002856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe00918d463958649be35c65344cdc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &851002858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851002856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &851002859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851002856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 1920485229}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 63f73ddc-be8f-43e3-b7f9-842dc6565f95
+    m_ActionName: 'Player/Move[/DualShock4GamepadHID/leftStick,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 23c40b18-d44d-4960-84e7-03d1b8b58e8f
+    m_ActionName: 'Player/Sprint[/DualShock4GamepadHID/leftStick/down,/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b705a369-814d-4872-854e-7d2ceb0fea24
+    m_ActionName: 'Player/Jump[/Keyboard/space,/DualShock4GamepadHID/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1bfea819-e691-47a9-bd40-22f97f2adb4e
+    m_ActionName: 'UI/Navigate[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/DualShock4GamepadHID/leftStick]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9bf1ee2c-8911-4c48-8b7e-6ecaa116813e
+    m_ActionName: 'UI/Submit[/DualShock4GamepadHID/buttonSouth,/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a317e7af-6d0b-4047-85cf-12658a3ffef1
+    m_ActionName: 'UI/Cancel[/DualShock4GamepadHID/buttonEast,/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: da07f424-691e-41ce-9f85-72d39b635e11
+    m_ActionName: 'UI/Point[/DualShock4GamepadHID/leftStick,/Mouse/position]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2d0b1644-6f13-4835-af19-832ac72a3445
+    m_ActionName: 'UI/Click[/Mouse/leftButton,/DualShock4GamepadHID/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6f57f9b8-8cb2-4b49-a283-1e4eb14111c0
+    m_ActionName: UI/RightClick
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 18a63d13-9def-4de8-9878-4a2c163d7eb8
+    m_ActionName: UI/MiddleClick
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5b337b36-b752-486e-bd29-959de053a89c
+    m_ActionName: UI/ScrollWheel
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 1400840192}
 --- !u!1 &892289140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,8 +1219,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1907002303}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 851002857}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -1390,6 +1509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c421c441daf018f4baee9bc8bc206f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToComplete: 300
+  currentTime: 0
+  gamemodeRunning: 0
+  uiManager: {fileID: 0}
 --- !u!4 &1907002304
 Transform:
   m_ObjectHideFlags: 0
@@ -1439,17 +1562,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_PointAction: {fileID: 4618317478477897854, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_MoveAction: {fileID: 7842317219379034372, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_SubmitAction: {fileID: 5240830492858069139, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_CancelAction: {fileID: 2251866107533504902, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_LeftClickAction: {fileID: -1720578353510707478, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_MiddleClickAction: {fileID: 5000153296817356650, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_RightClickAction: {fileID: 5898016692530386160, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_ScrollWheelAction: {fileID: 4866265815061863608, guid: fbc9d61a0552c86408399216b85d9ad9, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -1492,3 +1615,4 @@ SceneRoots:
   - {fileID: 1920485231}
   - {fileID: 1400840193}
   - {fileID: 1907002304}
+  - {fileID: 851002858}
